@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In Page</title>
+  <link rel="stylesheet" type="text/css" href="signin_style.css">
+</head>
+<body>
+
+
+  <div class="div">
+    <div class="div-2">
+      <a href="homepage.html">
+        <img
+        loading="lazy"
+        src="YA_logo.png"
+        class="img"
+        />
+      </a>
+
+      <div class="div-3">Yale School of Art</div>
+      <div class="div-4">
+        <a href="homepage.html">
+          <div class="div-5">Home</div>
+        </a>
+        <a href="program.html">
+          <div class="div-6">Programs</div>
+        </a>
+        <a href="network.html">
+          <div class="div-7">Our Network</div>
+        </a>
+      </div>
+      <div class="div-8">
+        <div><input type="text" name="search" placeholder="Search in site" class="div-9"></div>
+        <a href="">
+          <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/8fb91549-1a88-4560-b9a7-c28199d95cde?"
+          class="img-2"
+          />
+        </a>
+      </div>
+    </div>
+    
+    <img
+    loading="lazy"
+    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/1ebb1401-f23e-49a0-b579-b4dac81b7bb8?apiKey=237a32fd275d4b28ba0069f5ee03263c&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/1ebb1401-f23e-49a0-b579-b4dac81b7bb8?apiKey=237a32fd275d4b28ba0069f5ee03263c&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1ebb1401-f23e-49a0-b579-b4dac81b7bb8?apiKey=237a32fd275d4b28ba0069f5ee03263c&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/1ebb1401-f23e-49a0-b579-b4dac81b7bb8?apiKey=237a32fd275d4b28ba0069f5ee03263c&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/1ebb1401-f23e-49a0-b579-b4dac81b7bb8?apiKey=237a32fd275d4b28ba0069f5ee03263c&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1ebb1401-f23e-49a0-b579-b4dac81b7bb8?apiKey=237a32fd275d4b28ba0069f5ee03263c&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/1ebb1401-f23e-49a0-b579-b4dac81b7bb8?apiKey=237a32fd275d4b28ba0069f5ee03263c&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/1ebb1401-f23e-49a0-b579-b4dac81b7bb8?apiKey=237a32fd275d4b28ba0069f5ee03263c&"
+    class="img-3"
+    />
+    <div class="div-10A">
+      <div class="div-10">Student Login</div>
+      <div class="div-11">
+        Please enter your username and password to access your account.
+      </div>
+      <div class="div-12">Username</div>
+
+      <div>
+        <input type="text" name="username" id="username_box" placeholder="Enter username">    
+      </div>
+
+
+      <div class="div-14">Password</div>
+
+      <div>
+        <input type="text" name="password" id="password_box" placeholder="Enter password">    
+      </div>
+
+      <div class="div-15">
+        
+      </div>
+
+      <div class="div-16">
+        <div>
+          <input type="button" value="Cancel" id="cancel1_button">
+        </div>
+        <div>
+          <input type="button" value="Login" id="login_button">
+        </div>
+      </div>
+    </div>
+    <div class="div-19">
+      <div class="div-20">Create Account</div>
+      <div class="div-21">
+        New to the University. Enter details to create an account
+      </div>
+      <div class="div-22">Username</div>
+      <div>
+        <input type="text" name="username" id="newusername_box" placeholder="Enter username">    
+      </div>
+      <div class="div-24">Password</div>
+      <div>
+        <input type="text" name="password" id="newpassword_box" placeholder="Enter password">  
+      </div>
+      <div class="div-26">Confirm Password</div>
+      <div>
+        <input type="text" name="password" id="confirmpassword_box" placeholder="Enter password again">  
+      </div>
+      <div class="div-28">
+        Your password should be between 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter
+      </div>
+      <div class="div-29">
+        <div>
+          <input type="button" value="Cancel" id="cancel2_button">
+        </div>
+        <div>
+          <input type="button" value="Register" id="register_button">
+        </div>
+      </div>
+    </div>
+    <div class="div-32">
+      <div class="div-33">
+        <div class="column">
+          <div class="div-34">Contact us: 123-456-7890</div>
+        </div>
+        <div class="column-2">
+          <div class="div-35">Follow us: Twitter | Instagram | Facebook</div>
+        </div>
+        <div class="column-3">
+          <div class="div-36">Quick Links: About | Programs | Faculty</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    var UserBox=document.querySelector("#username_box");
+    var PWBox=document.querySelector("#password_box");
+    var loginButton=document.querySelector("#login_button");
+    var loginMessage=document.querySelector(".div-15");
+
+    loginButton.addEventListener("click", clickLogin)
+
+    function clickLogin(){
+      if (UserBox.value=="Daniella" && PWBox.value=="October15"){
+        window.location="personal.html"
+      }
+      else if (UserBox.value=="Zach" && PWBox.value=="March26"){
+        window.location="personal.html"
+      }
+      else{
+        loginMessage.textContent="Invalid username or password. Please try again.";
+        loginMessage.style.color="red";
+
+      }
+      sessionStorage.setItem("userName", UserBox.value);
+    }
+
+
+    var newUserBox=document.querySelector("#newusername_box");
+
+    var newPWBox=document.querySelector("#newpassword_box");
+    var confirmPWBox=document.querySelector("#confirmpassword_box");
+    var registerButton=document.querySelector("#register_button");
+    var registerMessage=document.querySelector(".div-28");
+
+    registerButton.addEventListener("click", clickRegister)
+
+    function clickRegister(){
+      var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+      if (newPWBox.value.match(passw) && newPWBox.value==confirmPWBox.value){
+        alert("Registration Successful!")
+        window.location="personal.html"
+        sessionStorage.setItem("userName", newUserBox.value);
+      }
+      else{
+        registerMessage.textContent="Invalid or unmatched password. Please try again.";
+        registerMessage.style.color="red"
+      }
+    }
+
+    var cancelOne=document.querySelector("#cancel1_button")
+    var cancelTwo=document.querySelector("#cancel2_button")
+    cancelOne.addEventListener("click", clearField)
+    cancelTwo.addEventListener("click", clearField)
+
+    function clearField(){
+      if (this.id=="cancel1_button"){
+        UserBox.value=""
+        PWBox.value=""
+      }
+      else if (this.id=="cancel2_button"){
+        newUserBox.value="";
+        newPWBox.value="";
+        confirmPWBox.value=""
+      }
+      
+
+    }
+
+
+
+  </script>
+
+</body>
+</html>
+
